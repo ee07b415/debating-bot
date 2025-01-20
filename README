@@ -2,17 +2,13 @@ conda create -n debatingbot python=3.11.9
 conda activate debatingbot
 
 === Welcome to the Detective Mystery Game ===
+This is an AI-based detective game where the AI presents you with a mysterious case and its context. Your goal is to uncover the truth by engaging in a dialogue with the AI, finding contradictions in its statements, or revealing hidden facts. Here are your available actions:
 
-Mystery Teller: On a stormy night at the Ushiromiya family mansion...
+1. Ask for Truth (/truth)
+Request an absolute fact from the AI. These facts are guaranteed to be true and relevant to solving the case. You can use these confirmed facts later to question other statements. Note: You have a limited number of times you can use this action.
+2. Present a Theory (/theory)
+Share your theory about any aspect of the case. The AI may either counter your theory with an absolute fact or choose to skip. If the AI skips, your theory becomes established as an absolute fact. There is no limit to how many theories you can present.
+3. Request More Details (/more)
+Ask the AI to provide additional information about the case. While these details help paint a fuller picture, they may not be confirmed facts. For example, if you learn "a body was found in the room," the death's circumstances might still be unclear. You'll need to use Ask for Truth or Present a Theory to confirm such details. You can request more details as often as you like.
 
-Turns remaining: 10
-
-Actions available:
-1. Ask a question (/question)
-2. Present a theory (/theory)
-3. Quit (/quit)
-
-What would you like to do? /question
-Enter your question: Where was the first body found?
-
-Response: The first victim was discovered in the study...
+Your challenge is to solve the mystery within your limited number of Truth requests. Use your theories and detail requests wisely to uncover what really happened!
