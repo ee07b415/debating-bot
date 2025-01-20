@@ -1,0 +1,18 @@
+conda create -n debatingbot python=3.11.9
+conda activate debatingbot
+
+=== Welcome to the Detective Mystery Game ===
+
+Mystery Teller: On a stormy night at the Ushiromiya family mansion...
+
+Turns remaining: 10
+
+Actions available:
+1. Ask a question (/question)
+2. Present a theory (/theory)
+3. Quit (/quit)
+
+What would you like to do? /question
+Enter your question: Where was the first body found?
+
+Response: The first victim was discovered in the study...

@@ -1,0 +1,23 @@
+# Core dependencies
+torch>=2.0.0  # PyTorch for model operations
+transformers>=4.36.0  # Hugging Face Transformers
+peft>=0.7.0  # Parameter Efficient Fine-tuning (for LoRA)
+
+# Model and training
+accelerate>=0.25.0  # Helps with model acceleration
+bitsandbytes>=0.41.0  # For quantization
+sentencepiece>=0.1.99  # Tokenization
+protobuf>=3.20.0  # Required by some model loading
+
+# Utilities
+tqdm>=4.66.1  # Progress bars
+numpy>=1.24.0
+pandas>=2.0.0  # Data handling
+safetensors>=0.4.0  # For loading/saving model weights
+
+# Optional but recommended
+gradio>=4.0.0  # If you want to create a web UI
+wandb>=0.15.0  # For tracking training
+
+# API
+anthropic>=0.43.1
