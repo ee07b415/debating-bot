@@ -47,3 +47,9 @@ htmlcov/
 # Distribution
 *.log
 logs/
+
+
+.cache/
+*.pth
+*.pt
+voices/

@@ -2,8 +2,8 @@
 from .base_model import BaseModel
 
 class TruthModel(BaseModel):
-    def __init__(self, model_name="microsoft/phi-2"):
-        super().__init__(model_name)
+    def __init__(self):
+        super().__init__()
         
     async def generate_with_truth_constraints(self, prompt, red_truths, required_truth_count=1):
         # Enhance prompt with truth requirements

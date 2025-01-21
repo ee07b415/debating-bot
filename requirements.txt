@@ -21,3 +21,16 @@ wandb>=0.15.0  # For tracking training
 
 # API
 anthropic>=0.43.1
+
+# Audio and TTS
+phonemizer>=3.0.0
+scipy>=1.11.0
+munch>=4.0.0
+sounddevice>=0.4.6
+
+# File handling
+huggingface_hub>=0.19.0  # For downloading models from HF
+
+# IPython and Jupyter requirements
+ipython>=8.0.0
+jupyter>=1.0.0

@@ -1,8 +1,12 @@
 # src/main.py
 import asyncio
+import os
 from  src.game.game_master import GameMaster
 
 async def main():
+    os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = r"C:\Program Files\eSpeak NG\libespeak-ng.dll"
+    os.environ["PHONEMIZER_ESPEAK_PATH"] = r"C:\Program Files\eSpeak NG\espeak-ng.exe"
+
     game = GameMaster()
     
     # Start the game

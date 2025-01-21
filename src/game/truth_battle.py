@@ -5,7 +5,6 @@ class TruthBattleSystem:
     def __init__(self):
         self.red_truths = {}  # Undeniable facts
         self.blue_theories = {}  # Player theories
-        self.facts_required = 3
     
     def declare_red_truth(self, statement, source="npc"):
         truth_id = len(self.red_truths)
