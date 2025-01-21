@@ -53,3 +53,5 @@ logs/
 *.pth
 *.pt
 voices/
+
+.wav
