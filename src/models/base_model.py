@@ -2,7 +2,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from anthropic import Anthropic
 import os
-import torch
 
 class BaseModel:
     def __init__(self):

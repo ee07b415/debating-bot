@@ -2,11 +2,18 @@
 import asyncio
 import os
 from  src.game.game_master import GameMaster
+from dotenv import load_dotenv
+
+if os.path.exists('.env'):
+    load_dotenv()
+else:
+    load_dotenv('.env.example')
+
+# Verify we have the required API keys
+if not os.getenv("ANTHROPIC_API_KEY"):
+    raise ValueError("Missing required API keys. Please check your .env or .env.example file.")
 
 async def main():
-    os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = r"C:\Program Files\eSpeak NG\libespeak-ng.dll"
-    os.environ["PHONEMIZER_ESPEAK_PATH"] = r"C:\Program Files\eSpeak NG\espeak-ng.exe"
-
     game = GameMaster()
     
     # Start the game

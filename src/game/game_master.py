@@ -2,12 +2,10 @@
 import asyncio
 from src.models.base_model import BaseModel
 from .truth_battle import TruthBattleSystem
-from src.models.audio_model import KokoroManager
 
 class GameMaster:
     def __init__(self):
         self.model = BaseModel()
-        self.audio_manager = KokoroManager()
         self.truth_battle = TruthBattleSystem()
         self.turns_remaining = 10
         # Start audio processing task
